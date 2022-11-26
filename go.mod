@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/SheltonZhu/115driver v1.0.12
 	github.com/Xhofe/go-cache v0.0.0-20220723083548-714439c8af9a
-	github.com/aws/aws-sdk-go v1.44.142
+	github.com/aws/aws-sdk-go v1.44.145
 	github.com/blevesearch/bleve/v2 v2.3.5
 	github.com/caarlos0/env/v6 v6.10.1
 	github.com/disintegration/imaging v1.6.2
