@@ -40,12 +40,6 @@ var SettingItemHooks = map[string]SettingItemHook{
 			return nil
 		},
 	},
-	//conf.OfficeTypes: {
-	//	Hook: func(item *model.SettingItem) error {
-	//		conf.TypesMap[conf.OfficeTypes] = strings.Split(item.Value, ",")
-	//		return nil
-	//	},
-	//},
 	conf.ProxyTypes: {
 		func(item *model.SettingItem) error {
 			conf.TypesMap[conf.ProxyTypes] = strings.Split(item.Value, ",")
@@ -77,6 +71,12 @@ var SettingItemHooks = map[string]SettingItemHook{
 			return nil
 		},
 	},
+	//conf.SearchIndex: {
+	//	Hook: func(item *model.SettingItem) error {
+	//		// TODO init/reset search
+	//		return search.Init(item.Value)
+	//	},
+	//},
 }
 
 func HandleSettingItem(item *model.SettingItem) (bool, error) {
